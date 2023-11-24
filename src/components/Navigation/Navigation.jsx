@@ -7,9 +7,11 @@ const Navigation = () => {
     <nav>
       <ul className={styles.NavigateMovies}>
         <Link to="/" end>
-          Home
+          <p className={styles.ColorHome}>Home</p>
         </Link>
-        <Link to="/movies">Movies</Link>
+        <Link to="/movies">
+          <p className={styles.ColorMovies}>Movies</p>
+        </Link>
       </ul>
       <Suspense fallback={<div>Loading...</div>}>
         <main>

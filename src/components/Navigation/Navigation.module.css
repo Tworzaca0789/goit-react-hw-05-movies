@@ -1,0 +1,8 @@
+.ColorHome,
+.ColorMovies {
+  color: blue;
+  font-weight: bold;
+  &:hover {
+    color: red;
+  }
+}

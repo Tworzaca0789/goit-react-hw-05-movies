@@ -1,0 +1,9 @@
+.ReviewList {
+  margin-left: 10px;
+  gap: 10px;
+}
+.ReviewEmpty {
+  font-size: 26px;
+  color: brown;
+  font-weight: bold;
+}

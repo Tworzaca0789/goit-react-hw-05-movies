@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FetchMovieDetails } from 'services/ApiTMDB';
+import styles from './MovieDetails.module.css';
 
 const MovieDetails = () => {
   const [movies, setMovies] = useState(null);
@@ -47,13 +48,13 @@ const MovieDetails = () => {
       />
 
       <div>
-        <h2>Aditional Information:</h2>
-        <div>
+        <h2 className={styles.DetalisMov}>Aditional Information:</h2>
+        <div className={styles.DetalisLink}>
           <Link to="cast" state={location.state}>
-            Сast
+            <p className={styles.TitleCast}>Сast</p>
           </Link>
           <Link to="reviews" state={location.state}>
-            Reviews
+            <p className={styles.TitleReview}>Reviews</p>
           </Link>
         </div>
       </div>

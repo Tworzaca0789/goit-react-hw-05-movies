@@ -1,6 +1,7 @@
 import { toast } from 'react-toastify';
 import styles from './SearchMovie.module.css';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Search({ onSubmit }) {
   const [name, setName] = useState('');
@@ -38,3 +39,9 @@ export default function Search({ onSubmit }) {
     </form>
   );
 }
+
+Search.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+};

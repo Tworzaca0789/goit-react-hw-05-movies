@@ -21,17 +21,6 @@ const Home = () => {
   return (
     <>
       <MovieList movies={movies} />
-      {/* <main>
-        <h1 className={styles.HomeTitle}>Trending today</h1>
-        <ul>
-          {movies.map(item => (
-            <li key={item.id}>
-              <Link to={`/movies/${item.id}`}>{item.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </main>
-      <ToastContainer autoClose={2000} /> */}
     </>
   );
 };

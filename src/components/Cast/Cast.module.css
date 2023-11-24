@@ -1,0 +1,24 @@
+.CastList {
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.CastImg {
+  width: 200px;
+  height: 300px;
+}
+.NoPhoto {
+  width: 200px;
+  height: 300px;
+}
+.CastCharacter {
+  flex-wrap: nowrap;
+}
+.NoInfo {
+  font-size: 26px;
+}

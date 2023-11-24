@@ -1,0 +1,12 @@
+.movieList {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.movieItem {
+  color: red;
+  &:hover {
+    color: greenyellow;
+    background-color: greenyellow;
+  }
+}
